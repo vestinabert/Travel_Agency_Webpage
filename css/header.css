@@ -1,0 +1,114 @@
+#topbar {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0));
+  padding: 20px 0;
+}
+
+#topbar>.wrap {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 20px;
+}
+
+#logo {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#menu nav a {
+  color: white;
+  border-bottom: 1px solid transparent;
+  line-height: 40px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#menu nav a:not(:first-of-type) {
+  margin-left: 20px;
+}
+
+#menu nav a:hover {
+  border-color: white;
+  color: white;
+}
+
+#menu nav a.btn {
+  color: black;
+  border-radius: 100px;
+  border: 0;
+  padding: 0 1.5rem;
+}
+
+#menu nav a.btn:hover {
+  background: var(--bs-warning);
+  color: white;
+}
+
+#menu .menu-bars {
+  height: 2.2rem;
+}
+
+#search-field {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+#search-field::placeholder {
+  color: white;
+}
+
+header {
+  background-image:
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.7)),
+    url('/images/header.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+
+
+  padding-bottom: 30px;
+
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#paris {
+  background-image: url('/images/paris.jpg');
+}
+
+header h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+  text-transform: uppercase;
+  text-align: initial;
+}
+
+@media screen and (min-width: 768px) {
+
+  header::before {
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.7));
+  }
+}

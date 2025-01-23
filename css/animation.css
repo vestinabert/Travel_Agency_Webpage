@@ -1,0 +1,52 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+p:nth-child(1) {
+    animation-delay: 0s;
+}
+
+p:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+p:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1) rotate(180deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+#logo img {
+    width: 80px;
+    transform-origin: center;
+    animation: rotateScale 2s ease-out forwards;
+    opacity: 0;
+}
