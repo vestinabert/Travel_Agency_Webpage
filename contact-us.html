@@ -49,21 +49,22 @@
         <div class="row g-2">
           <div class="col-6">
             <label for="name-field">Name</label>
-            <input class="form-control" id="name-field" name="name" required type="text" placeholder="Your Name">
+            <input class="form-control" id="name-field" name="name" required type="text" placeholder="John">
           </div>
           <div class="col-6">
             <label for="surname-field">Surname</label>
-            <input class="form-control" id="surname-field" name="surname" required type="text"
-              placeholder="Your Surame">
+            <input class="form-control" id="surname-field" name="surname" required type="text" placeholder="Doe">
           </div>
           <div class="col-6">
             <label for="email-field">Email</label>
             <input id="email-field" class="form-control" name="email" autocomplete="on" required type="email"
-              placeholder="Your Email">
+              placeholder="john@doe.com">
           </div>
           <div class="col-6">
             <label for="phone-field">Phone</label>
-            <input class="form-control" id="phone-field" name="phone" required type="text" pattern="[0-9]{8}" title="Hello" placeholder="Your Phone">
+            <input class="form-control" id="phone-field" name="phone" required type="tel" pattern="\+370[0-9]{8}"
+              title="Enter a valid Lithuanian phone number in the format +370XXXXXXXX"
+              placeholder="+37066453864" maxlength="12">
           </div>
           <div class="col-12">
             <label for="message-field">Message</label>
